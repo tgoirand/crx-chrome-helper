@@ -1,6 +1,6 @@
 {
 	"name": "CRX Helper",
-	"version": "2.2",
+	"version": "2.3",
 	"manifest_version": 2,
 	"description": "List CRX nodes.",
 	"icons": {
