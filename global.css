@@ -1,0 +1,55 @@
+body {
+	font-family: Verdana, Arial;
+	font-size: 11px;
+	min-width: 260px;
+}
+
+label {
+    margin: 0 3px 0 0;
+    display: inline-block;
+    width: 120px;
+}
+
+div {
+    display: inline-block;
+}
+
+.strong {
+    font-weight: bold;
+    font-style: normal;
+}
+
+hr {
+    background-color: #DEDEDE;
+    clear: both;
+    color: #DEDEDE;
+    border: 0;
+    display: block;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+#services a {
+    color: red;
+}
+
+#nb {
+    visibility:hidden;
+}
+
+.filterHolder {
+    background: url(skin/filter-middle.png) top left;    
+}
+
+input { background: transparent; font-size: 13px; width:200px; display:block;}
+
+a {
+	color: black;
+}
+
+.jcr a {
+   color: #085087;
+}
+
+.sling a {
+   color: #7c1b39;
+}

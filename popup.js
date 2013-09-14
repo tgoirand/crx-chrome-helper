@@ -8,11 +8,16 @@ var populate = function(obj, data) {
     for ( var k in data) {
         var title = k;
         if (typeof (data[k]) != 'object') {
+			console.log('title:' + title);
+			className = 'title';
+			if (title.indexOf(':') > -1) {
+				className = title.split(':')[0];
+			}
             obj[i] = {
                 title : title,
                 isFolder : true,
                 icon : 'prop.png',
-                classNames: { }
+                addClass: className 
             };
             obj[i].children = [];
             obj[i].children[0] = {
