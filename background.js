@@ -28,4 +28,10 @@ function checkForValidUrl(tabId, changeInfo, tab) {
 
 };
 
+chrome.tabs.getSelected(null, function (tab) {
+    chrome.tabs.sendRequest(tab.id, {action: "getSource"}, function(source) {
+        //alert(source);
+    });
+});
+
 chrome.tabs.onUpdated.addListener(checkForValidUrl);
